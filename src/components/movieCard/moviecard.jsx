@@ -1,8 +1,10 @@
+import MovieDesc from "../movieDescription/movieDescription";
 import styles from "./moviecard.module.css";
 
 const Moviecard = ({movies}) => {
     const movie = movies;
-    return(
+    return( 
+        <>
         <div className={styles.movie}>
             <div> 
                 <p>{movie.Year}</p>
@@ -15,6 +17,8 @@ const Moviecard = ({movies}) => {
                 <h3>{movie.Title}</h3>
             </div>
         </div>
+        <MovieDesc movies={movie}/>
+        </>
     )
 } 
 export default Moviecard;
