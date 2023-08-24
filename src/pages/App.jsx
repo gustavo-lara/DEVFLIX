@@ -5,6 +5,8 @@ import "./App.css";
 import logo from "../assets/devflix.png"
 import searchIcon from "../assets/search.svg"
 import Moviecard from "../components/movieCard/moviecard";
+import Footer from "../components/footer/footer";
+import "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
 
 
 const App = () => {
@@ -42,16 +44,17 @@ const App = () => {
             </div>
             {movies?.length > 0 ? (
                 <div className="container">
-                    {movies.map((movie) => (<Moviecard key= {movie.imdbID} movies={movie}/>))}
+                    {movies.map((movie) => (<Moviecard key={movie.imdbID} movies={movie} />))}
                 </div>
             ) : (
                 <div className="empty">
                     <h2>Nenhum filme encontrado 💔</h2>
                 </div>
 
-            ) 
+            )
             }
-        
+            <Footer link={"https://github.com/"}> gustavo-lara</Footer>
+
         </div>
     )
 }
