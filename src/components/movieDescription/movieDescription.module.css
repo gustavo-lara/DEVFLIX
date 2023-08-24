@@ -6,6 +6,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
     z-index: 999;
+    animation: fadeIn 0.3s ease-in-out forwards;
 }
 
 .movieModal{
@@ -20,6 +21,7 @@
     z-index: 1000;
     color: #fff;
     max-height: 100vh;
+    animation: fadeIn 0.3s ease-in-out forwards;
 }
 
 .movieInfo {
@@ -35,6 +37,8 @@
     height: 480px;
     object-fit: cover;
     object-position: top;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .btn {
@@ -85,7 +89,7 @@
 
 .contInfo{
     display: flex;
-    padding: 3em 2em 2em;
+    padding: 2em 2em 1em;
 }
 
 .contFlex{
@@ -95,4 +99,12 @@
 .desc{
     padding: 0 2em 2em;
     text-align: justify;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
 }
