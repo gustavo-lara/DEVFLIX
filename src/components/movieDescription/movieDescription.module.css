@@ -112,9 +112,16 @@
         width: 320px;
         margin-top: 2em;
     }
+    .movieInfo img{
+        width: 220px;
+    }
 
     .desc{
         padding-bottom: 3.5em;
+    }
+
+    .contInfo{
+        padding-top: 3em;
     }
 }
 
